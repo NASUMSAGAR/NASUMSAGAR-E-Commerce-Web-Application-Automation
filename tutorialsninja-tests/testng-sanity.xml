@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Sanity Suite" verbose="1" parallel="classes" thread-count="3">
+
+    <listeners>
+        <listener class-name="utils.TestListener"/>
+    </listeners>
+
+    <parameter name="browser" value="chrome"/>
+
+    <test name="Sanity Tests">
+        <classes>
+            <class name="TestCases.TC002_Login_Test"/>
+            <class name="TestCases.TC003_Logout_Test"/>
+            <class name="TestCases.TC005_Search_Box_Test">
+                <methods>
+                    <include name="verify_with_valid_text"/>
+                </methods>
+            </class>
+            <class name="TestCases.TC007_CartTest">
+                <methods>
+                    <include name="verify_cart_with_product"/>
+                    <include name="verify_cancel_product"/>
+                </methods>
+            </class>
+            <class name="TestCases.TC008_WishList_Test">
+                <methods>
+                    <include name="verify_wishlist_requires_login"/>
+                    <include name="verify_wishList_with_login"/>
+                </methods>
+            </class>
+            <class name="TestCases.TC009_ForgottenPasswordTest">
+                <methods>
+                    <include name="verify_with_registered_email"/>
+                </methods>
+            </class>
+            <class name="TestCases.TC010_Edit_Account_Test">
+                <methods>
+                    <include name="verify_account_update"/>
+                </methods>
+            </class>
+            <class name="TestCases.TC011_Change_Password_Test">
+                <methods>
+                    <include name="verify_with_new_password"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

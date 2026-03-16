@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TutorialNinja DDT Suite" parallel="false">
+    <parameter name="browser" value="chrome"/>
+    <test name="Login DDT">
+        <classes>
+            <class name="TestCases.TC004_Login_DDT"/>
+        </classes>
+    </test>
+</suite>

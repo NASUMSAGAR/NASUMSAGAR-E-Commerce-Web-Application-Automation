@@ -1,0 +1,412 @@
+<html>
+<head>
+<title>TestNG:  ChromeTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ChromeTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>20/3/1</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Mar 14 20:19:11 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>246 seconds (246242 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.TC008_WishList_Test.verify_cancel_wishList_product()'><b>verify_cancel_wishList_product</b><br>Test class: TestCases.TC008_WishList_Test</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (f03ffcc228f02393b4eb112cb47a65e2)] -&gt; xpath: //i[@class=&apos;fa fa-times&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.76, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58001}, goog:processID: 16508, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58001/devtoo..., se:cdpVersion: 146.0.7680.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f03ffcc228f02393b4eb112cb47a65e2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Pages.WishListPage.removeProduct(WishListPage.java:70)
+	at TestCases.TC008_WishList_Test.verify_cancel_wishList_product(TC008_WishList_Test.java:86)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1306426134", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1306426134'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (f03ffcc228f02393b4eb112cb47a65e2)] -&gt; xpath: //i[@class=&apos;fa fa-times&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.76, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58001}, goog:processID: 16508, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58001/devtoo..., se:cdpVersion: 146.0.7680.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f03ffcc228f02393b4eb112cb47a65e2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Pages.WishListPage.removeProduct(WishListPage.java:70)
+	at TestCases.TC008_WishList_Test.verify_cancel_wishList_product(TC008_WishList_Test.java:86)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>16</td>
+<td>TestCases.TC008_WishList_Test@3857f613</td></tr>
+<tr>
+<td title='TestCases.TC011_Change_Password_Test.verify_with_new_password()'><b>verify_with_new_password</b><br>Test class: TestCases.TC011_Change_Password_Test</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Password&quot;}
+  (Session info: chrome=146.0.7680.76)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c2f6875192461b96bc4548bf63da26dd, findElement {using=link text, value=Password}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.76, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61420}, goog:processID: 12608, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61420/devtoo..., se:cdpVersion: 146.0.7680.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c2f6875192461b96bc4548bf63da26dd
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at Pages.AccountPage.clickOnPassword(AccountPage.java:55)
+	at TestCases.TC011_Change_Password_Test.verify_with_new_password(TC011_Change_Password_Test.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace306670586", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace306670586'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Password&quot;}
+  (Session info: chrome=146.0.7680.76)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c2f6875192461b96bc4548bf63da26dd, findElement {using=link text, value=Password}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.76, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61420}, goog:processID: 12608, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61420/devtoo..., se:cdpVersion: 146.0.7680.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c2f6875192461b96bc4548bf63da26dd
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at Pages.AccountPage.clickOnPassword(AccountPage.java:55)
+	at TestCases.TC011_Change_Password_Test.verify_with_new_password(TC011_Change_Password_Test.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>13</td>
+<td>TestCases.TC011_Change_Password_Test@79079097</td></tr>
+<tr>
+<td title='TestCases.TC008_WishList_Test.verify_wishList_with_login()'><b>verify_wishList_with_login</b><br>Test class: TestCases.TC008_WishList_Test</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (dd0c7abf9e5fae7b33260e1155e06bd0)] -&gt; xpath: //a[normalize-space()=&apos;MacBook&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.76, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61333}, goog:processID: 4468, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61333/devtoo..., se:cdpVersion: 146.0.7680.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dd0c7abf9e5fae7b33260e1155e06bd0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Pages.WishListPage.wishListProductDisplayed(WishListPage.java:61)
+	at TestCases.TC008_WishList_Test.verify_wishList_with_login(TC008_WishList_Test.java:77)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace651639641", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace651639641'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (dd0c7abf9e5fae7b33260e1155e06bd0)] -&gt; xpath: //a[normalize-space()=&apos;MacBook&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.76, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61333}, goog:processID: 4468, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61333/devtoo..., se:cdpVersion: 146.0.7680.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dd0c7abf9e5fae7b33260e1155e06bd0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Pages.WishListPage.wishListProductDisplayed(WishListPage.java:61)
+	at TestCases.TC008_WishList_Test.verify_wishList_with_login(TC008_WishList_Test.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>16</td>
+<td>TestCases.TC008_WishList_Test@3857f613</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.TC007_CartTest.verify_cart_with_product()'><b>verify_cart_with_product</b><br>Test class: TestCases.TC007_CartTest</td>
+<td></td>
+<td>5</td>
+<td>TestCases.TC007_CartTest@489115ef</td></tr>
+<tr>
+<td title='TestCases.TC006_ContactUS_Test.verify_contactUS_with_ValidInfo()'><b>verify_contactUS_with_ValidInfo</b><br>Test class: TestCases.TC006_ContactUS_Test</td>
+<td></td>
+<td>3</td>
+<td>TestCases.TC006_ContactUS_Test@15de0b3c</td></tr>
+<tr>
+<td title='TestCases.TC010_Edit_Account_Test.verify_account_update_with_existing_email()'><b>verify_account_update_with_existing_email</b><br>Test class: TestCases.TC010_Edit_Account_Test</td>
+<td></td>
+<td>5</td>
+<td>TestCases.TC010_Edit_Account_Test@7c6908d7</td></tr>
+<tr>
+<td title='TestCases.TC005_Search_Box_Test.verify_with_invalid_text()'><b>verify_with_invalid_text</b><br>Test class: TestCases.TC005_Search_Box_Test</td>
+<td></td>
+<td>1</td>
+<td>TestCases.TC005_Search_Box_Test@1a677343</td></tr>
+<tr>
+<td title='TestCases.TC009_ForgottenPasswordTest.verify_with_registered_email()'><b>verify_with_registered_email</b><br>Test class: TestCases.TC009_ForgottenPasswordTest</td>
+<td></td>
+<td>4</td>
+<td>TestCases.TC009_ForgottenPasswordTest@198b6731</td></tr>
+<tr>
+<td title='TestCases.TC007_CartTest.verify_with_invalid_coupon_code()'><b>verify_with_invalid_coupon_code</b><br>Test class: TestCases.TC007_CartTest</td>
+<td></td>
+<td>3</td>
+<td>TestCases.TC007_CartTest@489115ef</td></tr>
+<tr>
+<td title='TestCases.TC001_RegistrationTest.verify_account_registration()'><b>verify_account_registration</b><br>Test class: TestCases.TC001_RegistrationTest</td>
+<td></td>
+<td>5</td>
+<td>TestCases.TC001_RegistrationTest@5bf0d49</td></tr>
+<tr>
+<td title='TestCases.TC001_RegistrationTest.verify_registration_without_privacy_policy()'><b>verify_registration_without_privacy_policy</b><br>Test class: TestCases.TC001_RegistrationTest</td>
+<td></td>
+<td>3</td>
+<td>TestCases.TC001_RegistrationTest@5bf0d49</td></tr>
+<tr>
+<td title='TestCases.TC007_CartTest.verify_checkout_with_outOfStock()'><b>verify_checkout_with_outOfStock</b><br>Test class: TestCases.TC007_CartTest</td>
+<td></td>
+<td>3</td>
+<td>TestCases.TC007_CartTest@489115ef</td></tr>
+<tr>
+<td title='TestCases.TC008_WishList_Test.verify_wishlist_requires_login()'><b>verify_wishlist_requires_login</b><br>Test class: TestCases.TC008_WishList_Test</td>
+<td></td>
+<td>3</td>
+<td>TestCases.TC008_WishList_Test@3857f613</td></tr>
+<tr>
+<td title='TestCases.TC003_Logout_Test.verify_logout()'><b>verify_logout</b><br>Test class: TestCases.TC003_Logout_Test</td>
+<td></td>
+<td>12</td>
+<td>TestCases.TC003_Logout_Test@6ed3ccb2</td></tr>
+<tr>
+<td title='TestCases.TC001_RegistrationTest.verify_registration_with_existing_email()'><b>verify_registration_with_existing_email</b><br>Test class: TestCases.TC001_RegistrationTest</td>
+<td></td>
+<td>5</td>
+<td>TestCases.TC001_RegistrationTest@5bf0d49</td></tr>
+<tr>
+<td title='TestCases.TC009_ForgottenPasswordTest.verify_with_unregistered_email()'><b>verify_with_unregistered_email</b><br>Test class: TestCases.TC009_ForgottenPasswordTest</td>
+<td></td>
+<td>3</td>
+<td>TestCases.TC009_ForgottenPasswordTest@198b6731</td></tr>
+<tr>
+<td title='TestCases.TC005_Search_Box_Test.verify_with_number()'><b>verify_with_number</b><br>Test class: TestCases.TC005_Search_Box_Test</td>
+<td></td>
+<td>1</td>
+<td>TestCases.TC005_Search_Box_Test@1a677343</td></tr>
+<tr>
+<td title='TestCases.TC002_Login_Test.login_with_valid_credentials()'><b>login_with_valid_credentials</b><br>Test class: TestCases.TC002_Login_Test</td>
+<td></td>
+<td>3</td>
+<td>TestCases.TC002_Login_Test@74e52ef6</td></tr>
+<tr>
+<td title='TestCases.TC007_CartTest.verify_cancel_product()'><b>verify_cancel_product</b><br>Test class: TestCases.TC007_CartTest</td>
+<td></td>
+<td>3</td>
+<td>TestCases.TC007_CartTest@489115ef</td></tr>
+<tr>
+<td title='TestCases.TC002_Login_Test.login_with_invalid_credentials()'><b>login_with_invalid_credentials</b><br>Test class: TestCases.TC002_Login_Test</td>
+<td></td>
+<td>2</td>
+<td>TestCases.TC002_Login_Test@74e52ef6</td></tr>
+<tr>
+<td title='TestCases.TC007_CartTest.verify_with_invalid_gift_certificate()'><b>verify_with_invalid_gift_certificate</b><br>Test class: TestCases.TC007_CartTest</td>
+<td></td>
+<td>3</td>
+<td>TestCases.TC007_CartTest@489115ef</td></tr>
+<tr>
+<td title='TestCases.TC005_Search_Box_Test.verify_with_valid_text()'><b>verify_with_valid_text</b><br>Test class: TestCases.TC005_Search_Box_Test</td>
+<td></td>
+<td>1</td>
+<td>TestCases.TC005_Search_Box_Test@1a677343</td></tr>
+<tr>
+<td title='TestCases.TC010_Edit_Account_Test.verify_account_update()'><b>verify_account_update</b><br>Test class: TestCases.TC010_Edit_Account_Test</td>
+<td></td>
+<td>4</td>
+<td>TestCases.TC010_Edit_Account_Test@7c6908d7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.TC011_Change_Password_Test.verify_with_different_password()'><b>verify_with_different_password</b><br>Test class: TestCases.TC011_Change_Password_Test</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.TC011_Change_Password_Test.verify_with_different_password() on instance TestCases.TC011_Change_Password_Test@79079097 depends on not successfully finished methods 
+[TestCases.TC011_Change_Password_Test.verify_with_new_password() on instance TestCases.TC011_Change_Password_Test@79079097]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace206260111", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace206260111'><pre>java.lang.Throwable: Method TestCases.TC011_Change_Password_Test.verify_with_different_password() on instance TestCases.TC011_Change_Password_Test@79079097 depends on not successfully finished methods 
+[TestCases.TC011_Change_Password_Test.verify_with_new_password() on instance TestCases.TC011_Change_Password_Test@79079097]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.TC011_Change_Password_Test@79079097</td></tr>
+</table><p>
+</body>
+</html>

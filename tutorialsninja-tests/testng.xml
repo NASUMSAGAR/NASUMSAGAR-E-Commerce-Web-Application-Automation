@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TutorialNinja Suite" verbose="1" parallel="tests" thread-count="2">
+
+    <listeners>
+        <listener class-name="utils.TestListener"/>
+    </listeners>
+
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="TestCases.TC001_RegistrationTest"/>
+            <class name="TestCases.TC002_Login_Test"/>
+            <class name="TestCases.TC003_Logout_Test"/>
+            <class name="TestCases.TC005_Search_Box_Test"/>
+            <class name="TestCases.TC006_ContactUS_Test"/>
+            <class name="TestCases.TC007_CartTest"/>
+            <class name="TestCases.TC008_WishList_Test"/>
+
+            <!-- FIX: updated from Tc009_ to TC009_ to match renamed class -->
+
+
+            <class name="TestCases.TC009_ForgottenPasswordTest"/>
+
+            <class name="TestCases.TC010_Edit_Account_Test"/>
+            <class name="TestCases.TC011_Change_Password_Test"/>
+        </classes>
+    </test>
+
+</suite>

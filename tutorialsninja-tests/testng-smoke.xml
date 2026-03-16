@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Smoke Suite" verbose="1" parallel="classes" thread-count="3">
+
+    <listeners>
+        <listener class-name="utils.TestListener"/>
+    </listeners>
+
+    <parameter name="browser" value="chrome"/>
+
+    <test name="Smoke Tests">
+        <classes>
+            <class name="TestCases.TC002_Login_Test">
+                <methods>
+                    <include name="login_with_valid_credentials"/>
+                </methods>
+            </class>
+            <class name="TestCases.TC003_Logout_Test">
+                <methods>
+                    <include name="verify_logout"/>
+                </methods>
+            </class>
+            <class name="TestCases.TC007_CartTest">
+                <methods>
+                    <include name="verify_cart_with_product"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

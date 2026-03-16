@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [TutorialNinja Suite]">
+  <listeners>
+    <listener class-name="utils.TestListener"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TestCases.TC011_Change_Password_Test">
+        <methods>
+          <include name="setup"/>
+          <include name="verify_with_new_password"/>
+          <include name="tearDown"/>
+          <include name="verify_with_different_password"/>
+        </methods>
+      </class> <!-- TestCases.TC011_Change_Password_Test -->
+      <class name="TestCases.TC008_WishList_Test">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verify_cancel_wishList_product"/>
+          <include name="verify_wishList_with_login"/>
+        </methods>
+      </class> <!-- TestCases.TC008_WishList_Test -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [TutorialNinja Suite] -->

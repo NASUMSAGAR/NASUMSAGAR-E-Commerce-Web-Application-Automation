@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-14T21:18:25 IST" name="Smoke Suite" finished-at="2026-03-14T21:19:27 IST" duration-ms="61620">
+    <groups>
+      <group name="regression">
+        <method signature="TC003_Logout_Test.verify_logout()[pri:0, instance:TestCases.TC003_Logout_Test@397fbdb]" name="verify_logout" class="TestCases.TC003_Logout_Test"/>
+        <method signature="TC002_Login_Test.login_with_valid_credentials()[pri:1, instance:TestCases.TC002_Login_Test@1a482e36]" name="login_with_valid_credentials" class="TestCases.TC002_Login_Test"/>
+        <method signature="TC007_CartTest.verify_cart_with_product()[pri:1, instance:TestCases.TC007_CartTest@33d512c1]" name="verify_cart_with_product" class="TestCases.TC007_CartTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="TC003_Logout_Test.verify_logout()[pri:0, instance:TestCases.TC003_Logout_Test@397fbdb]" name="verify_logout" class="TestCases.TC003_Logout_Test"/>
+        <method signature="TC002_Login_Test.login_with_valid_credentials()[pri:1, instance:TestCases.TC002_Login_Test@1a482e36]" name="login_with_valid_credentials" class="TestCases.TC002_Login_Test"/>
+        <method signature="TC007_CartTest.verify_cart_with_product()[pri:1, instance:TestCases.TC007_CartTest@33d512c1]" name="verify_cart_with_product" class="TestCases.TC007_CartTest"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="TC003_Logout_Test.verify_logout()[pri:0, instance:TestCases.TC003_Logout_Test@397fbdb]" name="verify_logout" class="TestCases.TC003_Logout_Test"/>
+        <method signature="TC002_Login_Test.login_with_valid_credentials()[pri:1, instance:TestCases.TC002_Login_Test@1a482e36]" name="login_with_valid_credentials" class="TestCases.TC002_Login_Test"/>
+        <method signature="TC007_CartTest.verify_cart_with_product()[pri:1, instance:TestCases.TC007_CartTest@33d512c1]" name="verify_cart_with_product" class="TestCases.TC007_CartTest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2026-03-14T21:18:25 IST" name="Smoke Tests" finished-at="2026-03-14T21:19:27 IST" duration-ms="61620">
+      <class name="TestCases.TC002_Login_Test">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestCases.TC002_Login_Test@1a482e36]" started-at="2026-03-14T21:18:25 IST" name="setup" finished-at="2026-03-14T21:18:59 IST" duration-ms="33143" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login_with_valid_credentials()[pri:1, instance:TestCases.TC002_Login_Test@1a482e36]" started-at="2026-03-14T21:18:59 IST" name="login_with_valid_credentials" finished-at="2026-03-14T21:19:16 IST" duration-ms="17235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_with_valid_credentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.TC002_Login_Test@1a482e36]" started-at="2026-03-14T21:19:16 IST" name="tearDown" finished-at="2026-03-14T21:19:17 IST" duration-ms="697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.TC002_Login_Test -->
+      <class name="TestCases.TC003_Logout_Test">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestCases.TC003_Logout_Test@397fbdb]" started-at="2026-03-14T21:18:25 IST" name="setup" finished-at="2026-03-14T21:19:01 IST" duration-ms="35390" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verify_logout()[pri:0, instance:TestCases.TC003_Logout_Test@397fbdb]" started-at="2026-03-14T21:19:01 IST" name="verify_logout" finished-at="2026-03-14T21:19:18 IST" duration-ms="17217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_logout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.TC003_Logout_Test@397fbdb]" started-at="2026-03-14T21:19:18 IST" name="tearDown" finished-at="2026-03-14T21:19:18 IST" duration-ms="392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.TC003_Logout_Test -->
+      <class name="TestCases.TC007_CartTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestCases.TC007_CartTest@33d512c1]" started-at="2026-03-14T21:18:25 IST" name="setup" finished-at="2026-03-14T21:19:03 IST" duration-ms="37400" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verify_cart_with_product()[pri:1, instance:TestCases.TC007_CartTest@33d512c1]" started-at="2026-03-14T21:19:03 IST" name="verify_cart_with_product" finished-at="2026-03-14T21:19:26 IST" duration-ms="22672" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"MacBook"}
+  (Session info: chrome=146.0.7680.76)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6d558ee5d00dfcf070d9444668e3446f, findElement {using=link text, value=MacBook}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.76, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58117}, goog:processID: 14312, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58117/devtoo..., se:cdpVersion: 146.0.7680.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d558ee5d00dfcf070d9444668e3446f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"MacBook"}
+  (Session info: chrome=146.0.7680.76)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6d558ee5d00dfcf070d9444668e3446f, findElement {using=link text, value=MacBook}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.76, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58117}, goog:processID: 14312, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58117/devtoo..., se:cdpVersion: 146.0.7680.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d558ee5d00dfcf070d9444668e3446f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
+at Pages.CartPage.cartMacBookConfirm(CartPage.java:61)
+at TestCases.TC007_CartTest.verify_cart_with_product(TC007_CartTest.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_cart_with_product -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.TC007_CartTest@33d512c1]" started-at="2026-03-14T21:19:26 IST" name="tearDown" finished-at="2026-03-14T21:19:27 IST" duration-ms="1052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.TC007_CartTest -->
+    </test> <!-- Smoke Tests -->
+  </suite> <!-- Smoke Suite -->
+</testng-results>
